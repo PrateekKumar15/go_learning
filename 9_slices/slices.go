@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	// Slices = Dynamic arrays
@@ -44,5 +47,11 @@ var nums2 = make([]int, len(nums), 5)
 	fmt.Println(nums[0:2]) // [1 0]
 	fmt.Println(nums[:2])  // [1 0]
 
+
+	//  slice 
+
+	nums3 := []int{1,3,4,66,89,9}
+
+	fmt.Println(slices.Equal(nums, nums3)) // true
 
 }
