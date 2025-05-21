@@ -39,5 +39,10 @@ var nums2 = make([]int, len(nums), 5)
 	fmt.Println(nums) // [1 0 0 0 0]
 	fmt.Println(nums2) // [1 0 0 0 0]
 
+	// slice operator
+
+	fmt.Println(nums[0:2]) // [1 0]
+	fmt.Println(nums[:2])  // [1 0]
+
 
 }
