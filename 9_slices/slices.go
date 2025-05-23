@@ -43,9 +43,9 @@ var nums2 = make([]int, len(nums), 5)
 	fmt.Println(nums2) // [1 0 0 0 0]
 
 	// slice operator
-
-	fmt.Println(nums[0:2]) // [1 0]
-	fmt.Println(nums[:2])  // [1 0]
+	nums4 := []int{1, 2, 3, 4, 5}
+	fmt.Println(nums4[0:2]) // [1 2]
+	fmt.Println(nums4[:2])  // [1 2]
 
 
 	//  slice 
@@ -53,5 +53,9 @@ var nums2 = make([]int, len(nums), 5)
 	nums3 := []int{1,3,4,66,89,9}
 
 	fmt.Println(slices.Equal(nums, nums3)) // true
+
+var nums5 = [][]int{{1, 2,3}, {4, 5,6}}
+
+	fmt.Println(nums5) // [[1 2] [3 4] [5 6]]
 
 }
